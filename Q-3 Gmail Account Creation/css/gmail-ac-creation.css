@@ -1,0 +1,124 @@
+/* General styling for the body and html, setting the background image and ensuring no margin or padding */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: url('../assets/image/gmail-ac-creation.jpg') no-repeat center center fixed;
+    /* Sets the background image with a fixed position */
+    background-size: cover;
+    /* Ensures the background covers the entire page */
+}
+
+/* Styles for the form container, centering it on the page */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Styling for the Gmail account form, including background, padding, and border */
+#gmailAccountForm {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    /* Semi-transparent white background */
+    border: 1px solid white;
+    /* White border */
+    border-radius: 8px;
+    /* Rounded corners for the form */
+    width: fit-content;
+}
+
+/* Styling for the form's heading */
+#gmailAccountForm h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+    /* White color for the title */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    /* Text shadow for better readability */
+}
+
+/* Default styling for input containers */
+.input-container {
+    margin-bottom: 15px;
+    background: white;
+    /* White background for input fields */
+    border-radius: 4px;
+    /* Slightly rounded corners */
+    padding: 5px;
+    /* Padding around inputs */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+/* Hover state for input containers */
+.input-container:hover {
+    background-color: steelblue;
+    /* Changes background to steel blue on hover */
+}
+
+/* Default styling for input fields */
+.input-container input {
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    /* No border */
+    border-radius: 4px;
+    /* Rounded corners */
+    box-sizing: border-box;
+    /* Includes padding and border in the element's total width and height */
+    color: black;
+    /* Black text color */
+    background: transparent;
+    /* Transparent background */
+}
+
+/* Focus state for input fields */
+.input-container input:focus {
+    outline: none;
+    /* No outline on focus */
+    background: transparent;
+    /* Keeps background transparent */
+    color: black;
+    /* Text color remains black */
+}
+
+/* Styling for the button container */
+.button-container {
+    text-align: center;
+}
+
+/* Default styling for buttons */
+.button-container button {
+    padding: 10px 20px;
+    margin: 5px;
+    color: black;
+    /* Black text color */
+    background-color: blueviolet;
+    /* Default background color */
+    border: 1px solid white;
+    /* White border */
+    border-radius: 4px;
+    /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+/* Hover effect for reset button */
+.reset-button:hover {
+    background-color: red;
+    /* Red background on hover */
+    opacity: 0.9;
+}
+
+/* Hover effect for submit button */
+.submit-button:hover {
+    background-color: green;
+    /* Green background on hover */
+    opacity: 0.9;
+}

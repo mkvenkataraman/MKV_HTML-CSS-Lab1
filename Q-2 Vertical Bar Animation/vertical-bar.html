@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Bar Graph</title>
+    <!-- Link to the external stylesheet for the bar graph -->
+    <link rel="stylesheet" href="css/vertical-bar.css">
+</head>
+
+<body>
+    <!-- Graph container that holds the bars and the title -->
+    <div class="graph-container">
+        <!-- Wrapper for the bars to align them properly -->
+        <div class="bars-wrapper">
+            <!-- First bar with a dynamic height set via inline CSS variable -->
+            <div class="bar" style="--bar-height: 30%;">
+                <!-- Label displaying the percentage for the first bar -->
+                <span class="percentage-label">30%</span>
+            </div>
+            <!-- Second bar with a dynamic height set via inline CSS variable -->
+            <div class="bar" style="--bar-height: 40%;">
+                <!-- Label displaying the percentage for the second bar -->
+                <span class="percentage-label">40%</span>
+            </div>
+            <!-- Third bar with a dynamic height set via inline CSS variable -->
+            <div class="bar" style="--bar-height: 80%;">
+                <!-- Label displaying the percentage for the third bar -->
+                <span class="percentage-label">80%</span>
+            </div>
+        </div>
+        <!-- Title of the graph displayed below the bars -->
+        <h1 class="graph-title">Bar Plot</h1>
+    </div>
+</body>
+
+</html>

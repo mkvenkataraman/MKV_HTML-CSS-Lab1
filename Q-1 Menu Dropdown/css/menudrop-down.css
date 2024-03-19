@@ -1,0 +1,118 @@
+/* Base styles for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    /* Sets the default font */
+    margin: 0;
+    /* Removes the default margin */
+    padding: 0;
+    /* Removes the default padding */
+}
+
+/* Styles for the page header */
+header {
+    background-color: red;
+    /* Background color of the header */
+    color: white;
+    /* Text color for the header */
+    text-align: center;
+    /* Aligns header text to the center */
+    padding: 5px;
+    /* Adds padding inside the header */
+}
+
+/* Styles for the navigation bar container */
+#navigate {
+    position: sticky;
+    /* Makes the navigation bar stick to the top of the page when scrolling */
+    top: 0;
+    /* Distance from the top of the viewport */
+    z-index: 1;
+    /* Ensures the navigation bar stays on top of other content */
+    background-color: #333;
+    /* Background color of the navigation bar */
+}
+
+/* General styles for navigation links */
+.menu {
+    list-style-type: none;
+    /* Removes default list styling */
+    padding: 0;
+    /* Removes default padding */
+    margin: 0;
+    /* Removes default margin */
+}
+
+.menu li {
+    display: inline-block;
+    /* Displays list items inline */
+    position: relative;
+    /* Sets position relative for positioning dropdowns */
+}
+
+.menu li a {
+    display: block;
+    /* Makes the link fill the list item for larger clickable area */
+    color: white;
+    /* Text color for links */
+    text-align: center;
+    /* Center-aligns the link text */
+    padding: 14px 16px;
+    /* Adds padding to the links */
+    text-decoration: none;
+    /* Removes underline from links */
+    transition: background-color 0.3s;
+    /* Smooth background color transition on hover */
+}
+
+/* Changes the background color of list items on hover */
+.menu li:hover {
+    background-color: #555;
+    /* Darker background on hover */
+}
+
+/* Styles for dropdown content, hidden by default */
+#Dropdown_1,
+#Dropdown_2 {
+    display: none;
+    /* Hides dropdown content by default */
+    position: absolute;
+    /* Positions dropdowns absolutely within their parent list items */
+    background-color: #f9f9f9;
+    /* Light background for dropdowns */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* Adds a shadow for depth */
+    min-width: 160px;
+    /* Minimum width for dropdowns */
+    z-index: 1;
+    /* Ensures dropdowns are above other content */
+    padding: 0;
+    /* Removes default padding */
+}
+
+/* Styles for dropdown links */
+#Dropdown_1 li,
+#Dropdown_2 li {
+    display: block;
+    /* Displays dropdown items as blocks */
+}
+
+#Dropdown_1 a,
+#Dropdown_2 a {
+    color: steelblue;
+    /* Text color for dropdown links */
+    padding: 12px 16px;
+    /* Padding for dropdown links */
+    text-decoration: none;
+    /* Removes underline from links */
+    display: block;
+    /* Displays links as block for full-width clickable area */
+    text-align: left;
+    /* Aligns text to the left */
+}
+
+/* Shows dropdown content when respective parent list item is hovered */
+.menu li:nth-child(2):hover #Dropdown_1,
+.menu li:nth-child(3):hover #Dropdown_2 {
+    display: block;
+    /* Displays the dropdown */
+}
